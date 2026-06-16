@@ -1,11 +1,13 @@
 const videos = [
   {
     id: 1,
-    youtubeId: "8LCbv3aJXC4",
+    src: "https://cdn.poehali.dev/projects/da13fa53-1dd6-48bf-9a60-7a2a494ab291/bucket/videos/video1.mp4",
+    type: "video/mp4",
   },
   {
     id: 2,
-    youtubeId: "WPV5zy6-Tao",
+    src: "https://cdn.poehali.dev/projects/da13fa53-1dd6-48bf-9a60-7a2a494ab291/bucket/videos/video2.mov",
+    type: "video/quicktime",
   },
 ]
 
@@ -28,12 +30,11 @@ export default function Projects() {
             style={{ width: "320px" }}
           >
             <div className="relative overflow-hidden" style={{ aspectRatio: "9/16" }}>
-              <iframe
-                src={`https://www.youtube.com/embed/${video.youtubeId}`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-                style={{ border: "none" }}
+              <video
+                src={video.src}
+                controls
+                className="w-full h-full object-cover"
+                playsInline
               />
             </div>
           </div>
