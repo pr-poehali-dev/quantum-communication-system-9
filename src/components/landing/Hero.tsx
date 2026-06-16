@@ -21,11 +21,11 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="hidden md:block md:w-2/5 md:absolute md:right-0 md:top-0 md:bottom-0 md:flex md:items-center md:justify-center">
+        <div className="hidden md:block md:w-2/5 md:absolute md:right-0 md:top-0 md:bottom-0 md:flex md:items-center">
           <img
             src="https://cdn.poehali.dev/projects/fa5e3117-862f-4fec-ba3c-dccb9fa61e48/bucket/d2698f42-7df9-48eb-a458-7a892b71f64a.jpeg"
             alt="Nate Logo"
-            className="w-2/3 h-auto object-contain mix-blend-multiply dark:mix-blend-normal animate-pulse"
+            className="w-full h-auto md:h-full md:w-auto md:object-cover md:object-left mix-blend-multiply dark:mix-blend-screen"
           />
         </div>
       </div>
