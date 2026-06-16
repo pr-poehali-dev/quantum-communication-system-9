@@ -42,8 +42,8 @@ export default function Services() {
             <div className={`${service.color} w-12 h-12 rounded-full flex items-center justify-center mb-4 shadow-sm`}>
               <service.icon className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-xl font-semibold mb-2 text-black dark:text-white">{service.title}</h3>
-            <p className="text-gray-700 dark:text-gray-300">{service.description}</p>
+            <h3 className="text-xl font-semibold mb-2 text-black">{service.title}</h3>
+            <p className="text-gray-600">{service.description}</p>
           </div>
         ))}
       </div>

@@ -39,7 +39,7 @@ export default function Projects() {
             key={video.id}
             className="card overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-[1.02]"
           >
-            <div className="relative overflow-hidden aspect-video bg-gray-100 dark:bg-[#1a1a1a]">
+            <div className="relative overflow-hidden bg-gray-100" style={{ aspectRatio: "9/16" }}>
               {video.src ? (
                 <video
                   src={video.src}
@@ -47,17 +47,13 @@ export default function Projects() {
                   className="w-full h-full object-cover"
                 />
               ) : (
-                <div className="w-full h-full flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 gap-2">
+                <div className="w-full h-full flex flex-col items-center justify-center text-gray-400 gap-2">
                   <div className="w-14 h-14 rounded-full bg-[#7A7FEE]/10 flex items-center justify-center">
                     <Icon name="Play" className="w-6 h-6 text-[#7A7FEE]" />
                   </div>
                   <span className="text-xs">Видео скоро здесь</span>
                 </div>
               )}
-            </div>
-            <div className="p-4 md:p-6">
-              <h3 className="text-xl font-semibold text-black dark:text-white">{video.title}</h3>
-              <p className="text-gray-700 dark:text-gray-300 text-sm mt-1">{video.description}</p>
             </div>
           </div>
         ))}

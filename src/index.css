@@ -96,15 +96,16 @@
   }
 
   .card {
-    background-color: var(--card);
+    background-color: #ffffff;
     color: var(--card-foreground);
     border: 1px solid var(--card-border);
     @apply rounded-3xl overflow-hidden shadow-md;
   }
 
   .dark .card {
-    background-color: var(--card);
-    background-image: linear-gradient(to bottom, #2d2e2f, #272829);
+    background-color: #ffffff;
+    background-image: none;
+    color: #111827;
     position: relative;
   }
 

@@ -5,13 +5,13 @@ export default function CallToAction() {
     <section id="contact" className="card my-20 relative overflow-hidden shadow-md">
       <div className="p-8 md:p-10 lg:p-12 flex flex-col md:flex-row items-start">
         <div className="w-full md:w-3/5 z-10">
-          <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
-            Нужен крутой <span className="text-[#7A7FEE] dark:text-[#7A7FEE]">монтаж</span> для вашего видео?
+          <h2 className="text-black mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+            Нужен крутой <span className="text-[#7A7FEE]">монтаж</span> для вашего видео?
           </h2>
-          <p className="my-6 text-sm md:text-base max-w-md text-gray-700 dark:text-gray-300">
+          <p className="my-6 text-sm md:text-base max-w-md text-gray-600">
             Есть отснятый материал или идея ролика?
           </p>
-          <p className="mb-6 text-sm md:text-base max-w-md text-gray-700 dark:text-gray-300">
+          <p className="mb-6 text-sm md:text-base max-w-md text-gray-600">
             Напишите мне — обсудим формат, сроки и стиль. Сделаю монтаж, который зацепит вашу аудиторию.
           </p>
           <div className="flex flex-wrap items-center gap-4">
