@@ -1,25 +1,25 @@
-import { CircleDot, Layers, Rocket } from "lucide-react"
+import { Scissors, Palette, Music } from "lucide-react"
 
 const services = [
   {
     id: 1,
-    title: "Исследование",
-    description: "Расскажите о вашем проекте, и мы поможем воплотить вашу идею в жизнь.",
-    icon: CircleDot,
+    title: "Монтаж видео",
+    description: "Собираю отснятый материал в динамичный ролик с чётким ритмом и удержанием внимания.",
+    icon: Scissors,
     color: "bg-[#7A7FEE]",
   },
   {
     id: 2,
-    title: "Разработка",
-    description: "Создаем масштабируемые и надежные решения, используя лучшие инструменты.",
-    icon: Layers,
+    title: "Цвет и графика",
+    description: "Цветокоррекция, титры, переходы и моушн-графика для профессионального вида.",
+    icon: Palette,
     color: "bg-[#7A7FEE]",
   },
   {
     id: 3,
-    title: "Запуск + Развитие",
-    description: "Бесшовная интеграция, оптимизация и масштабирование по мере роста вашего бизнеса.",
-    icon: Rocket,
+    title: "Звук и финал",
+    description: "Чистка звука, музыка, синхронизация и финальный экспорт под любую платформу.",
+    icon: Music,
     color: "bg-[#7A7FEE]",
   },
 ]
@@ -28,12 +28,12 @@ export default function Services() {
   return (
     <section id="services" className="my-20">
       <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
-        Раскройте потенциал
-        <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">вашего бизнеса</span>
+        Что я делаю
+        <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">с вашим видео</span>
       </h2>
       <p className="mb-12 max-w-2xl text-gray-700 dark:text-gray-300">
-        Мы создаем кастомные платформы и AI-инструменты для упрощения операций и масштабирования. Наш процесс делает
-        реализацию ваших идей простой и эффективной.
+        Полный цикл постпродакшна — от черновой склейки до финального ролика. Беру на себя монтаж, цвет, звук и графику,
+        чтобы вы получили готовое видео под ключ.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

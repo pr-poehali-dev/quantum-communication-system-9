@@ -37,9 +37,14 @@ export default function Header() {
       >
         <div className="container py-4">
           <div className="flex items-center justify-between">
-            <a href="#" className="flex items-center">
+            <a href="#" className="flex items-center gap-2.5">
+              <img
+                src="https://cdn.poehali.dev/projects/fa5e3117-862f-4fec-ba3c-dccb9fa61e48/bucket/d2698f42-7df9-48eb-a458-7a892b71f64a.jpeg"
+                alt="Nate Logo"
+                className="h-9 w-9 object-contain rounded-md mix-blend-multiply dark:mix-blend-normal"
+              />
               <span className="text-2xl font-bold text-black dark:text-white">
-                Neural<span className="text-[#7A7FEE]">Works</span>
+                nate <span className="text-[#7A7FEE]">portfolio</span>
               </span>
             </a>
 
@@ -51,7 +56,7 @@ export default function Header() {
                       href="#projects"
                       className="text-black dark:text-white hover:text-[#7A7FEE] dark:hover:text-[#7A7FEE] transition-colors"
                     >
-                      Проекты
+                      Работы
                     </a>
                   </li>
                   <li>
@@ -99,8 +104,13 @@ export default function Header() {
         <div className="fixed inset-0 z-[100] bg-black/50 md:hidden">
           <div className="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-white dark:bg-[#111111] shadow-xl overflow-y-auto">
             <div className="sticky top-0 z-10 flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#111111]">
-              <span className="text-xl font-bold text-black dark:text-white">
-                Neural<span className="text-[#7A7FEE]">Works</span>
+              <span className="flex items-center gap-2 text-xl font-bold text-black dark:text-white">
+                <img
+                  src="https://cdn.poehali.dev/projects/fa5e3117-862f-4fec-ba3c-dccb9fa61e48/bucket/d2698f42-7df9-48eb-a458-7a892b71f64a.jpeg"
+                  alt="Nate Logo"
+                  className="h-7 w-7 object-contain rounded mix-blend-multiply dark:mix-blend-normal"
+                />
+                nate <span className="text-[#7A7FEE]">portfolio</span>
               </span>
               <button
                 onClick={() => setMobileMenuOpen(false)}
@@ -128,7 +138,7 @@ export default function Header() {
                     className="flex items-center py-3 px-4 rounded-lg text-base text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Проекты
+                    Работы
                   </a>
                 </li>
                 <li>

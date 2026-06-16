@@ -6,24 +6,24 @@ export default function CallToAction() {
       <div className="p-8 md:p-10 lg:p-12 flex flex-col md:flex-row items-start">
         <div className="w-full md:w-3/5 z-10">
           <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
-            Ваша следующая идея <span className="text-[#7A7FEE] dark:text-[#7A7FEE]">начинается</span> здесь
+            Нужен крутой <span className="text-[#7A7FEE] dark:text-[#7A7FEE]">монтаж</span> для вашего видео?
           </h2>
           <p className="my-6 text-sm md:text-base max-w-md text-gray-700 dark:text-gray-300">
-            Есть идея или проблема, которую нужно решить?
+            Есть отснятый материал или идея ролика?
           </p>
           <p className="mb-6 text-sm md:text-base max-w-md text-gray-700 dark:text-gray-300">
-            Давайте обсудим. Мы поможем найти лучший подход, составить план и понять, подходим ли мы друг другу.
+            Напишите мне — обсудим формат, сроки и стиль. Сделаю монтаж, который зацепит вашу аудиторию.
           </p>
           <div>
             <ContactFormButton />
           </div>
         </div>
 
-        <div className="hidden md:block md:w-2/5 md:absolute md:right-0 md:top-0 md:bottom-0 md:flex md:items-center">
+        <div className="hidden md:block md:w-2/5 md:absolute md:right-0 md:top-0 md:bottom-0 md:flex md:items-center md:justify-center">
           <img
-            src="/purple-circle-wave-static.png"
-            alt="Purple Wave"
-            className="w-full h-auto md:h-full md:w-auto md:object-cover md:object-left"
+            src="https://cdn.poehali.dev/projects/fa5e3117-862f-4fec-ba3c-dccb9fa61e48/bucket/d2698f42-7df9-48eb-a458-7a892b71f64a.jpeg"
+            alt="Nate Logo"
+            className="w-2/3 h-auto object-contain mix-blend-multiply dark:mix-blend-normal"
           />
         </div>
       </div>

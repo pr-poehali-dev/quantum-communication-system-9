@@ -12,17 +12,22 @@ export default function Footer() {
   return (
     <footer className="container py-8 border-t border-gray-200 dark:border-gray-800">
       <div className="flex flex-col items-center text-center">
-        <a href="#" className="flex items-center justify-center mb-4">
+        <a href="#" className="flex items-center justify-center gap-2.5 mb-4">
+          <img
+            src="https://cdn.poehali.dev/projects/fa5e3117-862f-4fec-ba3c-dccb9fa61e48/bucket/d2698f42-7df9-48eb-a458-7a892b71f64a.jpeg"
+            alt="Nate Logo"
+            className="h-8 w-8 object-contain rounded-md mix-blend-multiply dark:mix-blend-normal"
+          />
           <span className="text-2xl font-bold text-black dark:text-white">
-            Neural<span className="text-[#7A7FEE]">Works</span>
+            nate <span className="text-[#7A7FEE]">portfolio</span>
           </span>
         </a>
         <p className="text-sm text-gray-600 dark:text-gray-400 max-w-md mx-auto mb-8">
-          Ваш AI-партнер в создании качественных масштабируемых платформ.
+          Видеомонтаж, который держит внимание зрителя до конца.
         </p>
 
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          {new Date().getFullYear()} NeuralWorks. Все права защищены.
+          {new Date().getFullYear()} nate portfolio. Все права защищены.
         </p>
       </div>
     </footer>

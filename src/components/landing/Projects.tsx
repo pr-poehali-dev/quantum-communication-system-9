@@ -1,26 +1,23 @@
-import { ArrowUpRight } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
-const projects = [
+const videos = [
   {
     id: 1,
-    slug: "ai-analytics-dashboard",
-    title: "AI Аналитика",
-    shortDescription: "Платформа бизнес-аналитики в реальном времени на базе машинного обучения",
-    mainImage: "/portfolio-images/saas-dashboard-1.jpg",
+    title: "Работа 1",
+    description: "Динамичный монтаж с цветокоррекцией и звуком. Загрузите сюда своё видео.",
+    src: "",
   },
   {
     id: 2,
-    slug: "smart-automation-suite",
-    title: "Умная автоматизация",
-    shortDescription: "Комплексная автоматизация рабочих процессов с AI-принятием решений",
-    mainImage: "/portfolio-images/ecommerce-interface-1.jpg",
+    title: "Работа 2",
+    description: "Рилс / короткий вертикальный ролик. Загрузите сюда своё видео.",
+    src: "",
   },
   {
     id: 3,
-    slug: "neural-commerce-platform",
-    title: "Neural Commerce",
-    shortDescription: "E-commerce платформа нового поколения с персонализированными AI-рекомендациями",
-    mainImage: "/portfolio-images/ai-platform-1.jpg",
+    title: "Работа 3",
+    description: "YouTube-ролик с графикой и переходами. Загрузите сюда своё видео.",
+    src: "",
   },
 ]
 
@@ -28,34 +25,39 @@ export default function Projects() {
   return (
     <section id="projects" className="my-20">
       <h2 className="text-black dark:text-white mb-6 text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
-        Наши последние
-        <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">проекты</span>
+        Мои последние
+        <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">работы</span>
       </h2>
       <p className="mb-12 max-w-2xl text-gray-700 dark:text-gray-300">
-        От AI-автоматизации до кастомных маркетплейсов — наши решения помогают бизнесу масштабироваться эффективнее.
-        Изучите платформы, инструменты и решения, которые мы создали для наших клиентов.
+        Подборка моих видеоработ — от вертикальных рилсов до полноценных YouTube-роликов. Каждый проект — это монтаж,
+        звук, цвет и графика, собранные так, чтобы удерживать внимание зрителя.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {projects.map((project) => (
+        {videos.map((video) => (
           <div
-            key={project.slug}
-            className="card overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+            key={video.id}
+            className="card overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-[1.02]"
           >
-            <div className="relative overflow-hidden">
-              <img
-                src={project.mainImage}
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
+            <div className="relative overflow-hidden aspect-video bg-gray-100 dark:bg-[#1a1a1a]">
+              {video.src ? (
+                <video
+                  src={video.src}
+                  controls
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className="w-full h-full flex flex-col items-center justify-center text-gray-400 dark:text-gray-500 gap-2">
+                  <div className="w-14 h-14 rounded-full bg-[#7A7FEE]/10 flex items-center justify-center">
+                    <Icon name="Play" className="w-6 h-6 text-[#7A7FEE]" />
+                  </div>
+                  <span className="text-xs">Видео скоро здесь</span>
+                </div>
+              )}
             </div>
             <div className="p-4 md:p-6">
-              <h3 className="text-xl font-semibold text-black dark:text-white">{project.title}</h3>
-              <p className="text-gray-700 dark:text-gray-300 text-sm mt-1 mb-4">{project.shortDescription}</p>
-              <div className="inline-flex items-center text-[#7A7FEE] text-sm font-medium group">
-                Подробнее{" "}
-                <ArrowUpRight className="w-4 h-4 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </div>
+              <h3 className="text-xl font-semibold text-black dark:text-white">{video.title}</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm mt-1">{video.description}</p>
             </div>
           </div>
         ))}
@@ -63,7 +65,7 @@ export default function Projects() {
 
       <div className="flex justify-center mt-8">
         <a href="#contact" className="btn-primary">
-          Все проекты
+          Заказать монтаж
         </a>
       </div>
     </section>
